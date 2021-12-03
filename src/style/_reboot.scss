@@ -1,0 +1,177 @@
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    position: relative;
+    width: 100%;
+    color: #000;
+}
+
+body {
+    font-family: "Roboto";
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+@media (max-width: 992.98px) {
+    body.lock {
+        width: 100%;
+        position: fixed;
+        overflow: hidden;
+    }
+}
+
+input,
+button,
+textarea {
+    font-family: "Roboto";
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.container-max {
+    max-width: 1920px;
+    padding: 0 50px;
+}
+
+a {
+    color: #fff;
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+    &:hover {
+        opacity: 0.6;
+        color: #fff;
+    }
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .burger {
+        display: block;
+        .ham {
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+            transition: transform 400ms;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .hamRotate.active {
+            transform: rotate(45deg);
+        }
+        .hamRotate180.active {
+            transform: rotate(180deg);
+        }
+        .line {
+            fill: none;
+            transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+            stroke: #fff;
+            stroke-width: 5.5;
+            stroke-linecap: round;
+        }
+        .ham8 .top {
+            stroke-dasharray: 40 160;
+        }
+        .ham8 .middle {
+            stroke-dasharray: 40 142;
+            transform-origin: 50%;
+            transition: transform 400ms;
+        }
+        .ham8 .bottom {
+            stroke-dasharray: 40 85;
+            transform-origin: 50%;
+            transition: transform 400ms, stroke-dashoffset 400ms;
+        }
+        .ham8.active .top {
+            stroke-dashoffset: -64px;
+        }
+        .ham8.active .middle {
+            //stroke-dashoffset: -20px;
+            transform: rotate(90deg);
+        }
+        .ham8.active .bottom {
+            stroke-dashoffset: -64px;
+        }
+    }
+}

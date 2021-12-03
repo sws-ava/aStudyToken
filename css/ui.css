@@ -1,0 +1,15 @@
+body {
+  background: #fff;
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span {
+  color: #3A9BF4;
+}
+
+h1 {
+  font-size: calc(24px + 22 * (100vw / 1400));
+}
