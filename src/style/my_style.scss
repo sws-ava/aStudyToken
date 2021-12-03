@@ -54,6 +54,11 @@ section {
     margin-bottom: 100px;
     // border-bottom-right-radius: 4em;
     // border-bottom-left-radius: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -140px;
+    padding-top: 140px;
     overflow: hidden;
     @media (max-width: 991.98px) {
         border-bottom-right-radius: 0;
