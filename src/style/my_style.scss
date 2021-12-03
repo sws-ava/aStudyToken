@@ -111,6 +111,8 @@ section {
     }
     .titles_holder {
         padding-top: 5em;
+        z-index: 1;
+        position: relative;
     }
     h1 {
         @media (max-width: 991.98px) {
