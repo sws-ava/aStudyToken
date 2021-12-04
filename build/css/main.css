@@ -3841,7 +3841,9 @@ section {
       .section1 p {
         margin: 0 auto 2.5em; } }
   .section1 .titles_holder {
-    padding-top: 5em; }
+    padding-top: 5em;
+    z-index: 1;
+    position: relative; }
   @media (max-width: 991.98px) {
     .section1 h1 {
       text-align: center; } }
